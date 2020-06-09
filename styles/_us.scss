@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.us {
+    display: flex;
+    .women-in-coding {
+        width: 457.6px;
+        margin-left: 14%;
+        position: relative;
+        display: block;
+        margin-top: -170px;
+        
+        img {
+            object-fit: scale-down;
+            height: 660px;
+        }
+    }
+    
+    .us-one {
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+    }
+    .us-two {
+       margin-left: 18%;
+        display: flex;
+        flex-direction: column;
+    }
+    .us-title{
+        padding-block-end: 24px;
+        display: block;
+        p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+    }
+    .us-paragraph {
+        height: 204px;
+        display: block;
+        p{
+            width: 464px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-width: 424px) {
+.us {
+    .women-in-coding {
+            margin-left: auto;
+            max-width: 100%;
+            margin-right: auto;
+            margin-top: -79px;
+            height: 519px;
+            padding-block-end: 27px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: unset;
+            img {
+                object-fit: scale-down;
+                width: auto;
+                height: 519px;
+            }
+        }
+        display: block;
+        padding-left: 0;
+        .us-two {
+            display: block;
+            padding-left: 16px;
+            margin-left: 0px;
+        }
+        .us-title {
+            width: 288px;
+            height: 119px;
+            padding-block-start: 27px;
+            padding-block-end: 8px;
+            padding-left: 0;
+            p {
+                font-size: 36px;
+                letter-spacing: 0;
+                line-height: 42px;
+            }
+        }
+        .us-paragraph {
+            padding-block-end: 54px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            height: 308px;
+            p {
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 22px;
+                text-align: justify;
+                width: 288px;
+            }
+        }
+    }      
+}
+
+@media screen and (min-device-width : 425px) and (max-width: 470px) {
+
+    .us {
+        display: flex;
+        flex-direction: column;
+        .women-in-coding {
+            width: auto;
+            img {
+                object-fit: scale-down;
+                height: 510px;
+            }
+        }
+        .us-title p {
+            font-size: 36px;
+        }
+
+        .us-two {
+            margin-left: 16px;
+        }
+
+        .us-paragraph {
+            height: 240px;
+            p {
+                font-size: 14px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width : 471px) and (max-width: 768px) {
+
+    .us {
+        display: flex;
+        flex-direction: column;
+        .women-in-coding {
+            width: auto;
+            img {
+                object-fit: scale-down;
+                height: 510px;
+            }
+        }
+        .us-title p {
+            font-size: 36px;
+            padding-left: 14%;
+        }
+
+        .us-two {
+            margin-left: 16px;
+        }
+
+        .us-paragraph {
+            p {
+                font-size: 17px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width : 770px) and (max-width: 1026px) {
+
+    .us {
+        .us-two {
+            padding-left: 0;
+            margin-left: 0px;
+        }
+        .us-title p {
+            font-size: 29px;
+        }
+        .us-paragraph {
+            p {
+                width: 268px;
+                font-size: 16px;
+            }
+        }     
+    }
+}
+
+@media screen and (min-device-width : 1441px) {
+
+    .us .us-two {
+        margin-left: 20%;
+    }
+
+}

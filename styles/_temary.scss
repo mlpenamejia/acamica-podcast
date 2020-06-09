@@ -1,0 +1,103 @@
+.temary-container {
+     height: 362px;
+     width: 100%;
+    .temary-title {
+        width: auto;
+        height: 126px;
+        padding-block-start: 64px;
+        padding-left: 14%;
+        p {
+            font-family: 'IBM Plex Sans', sans-serif;
+            font-size: 48px;
+            color: #060A24;
+            letter-spacing: 0;
+        }
+    }
+    .images-container-five {
+        display:  inline-flex;
+        padding-block-start: 56px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-left: 14%;
+        margin-right: 14%;
+        .remote-work, .double-checking-programming, .code-bases, .informatics-security {
+            width: 260px;
+            img {
+                object-fit: scale-down;
+                width: 104px;
+                height: 104px;
+           }
+             li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    font-family: 'IBM Plex Sans', sans-serif;
+                    font-size: 24px;
+                    color: #060A24;
+                    letter-spacing: 0;   
+                }
+            }
+        }
+    }
+}
+@media screen  and (min-device-width : 320px )and (max-width: 480px) {
+
+    .temary-container {
+        height: auto;   
+        .temary-title {
+            width: 288px;
+            height: 156px;
+            padding-left: 16px;
+            padding-block-start: 48px;
+            margin-block-end: 37px;
+            p {
+                font-size: 36px;
+                letter-spacing: 0;
+                line-height: 42px;
+            }
+        }
+        .images-container-five {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            img {
+                object-fit: scale-down;
+                width: 104px;
+                height: 104px;
+            }
+            li {
+                list-style: none;
+                a {
+                    font-size: 24px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+            .remote-work, .code-bases, .double-checking-programming {
+                padding-block-end: 52px;
+                height: 174px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+            }
+            .informatics-security {
+                width: auto;
+                height: 174px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }  
+    } 
+}  
+   
+@media screen and (min-device-width : 471px) and (max-width: 768px) {
+
+    .temary-container .temary-title p {
+        font-size: 36px;
+    }
+}

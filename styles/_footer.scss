@@ -1,0 +1,121 @@
+
+footer {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .footer-title {
+        height: 95px;
+        padding-block-start: 36px;
+        padding-left: 7%;
+        padding-right: 45%;
+        p {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 28px;
+            width: 269px;
+        }
+    }
+    .social {
+        ul {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        li {
+            margin: 0 5px;
+            a {
+                display: block;
+                padding: 0px 20px;
+                text-decoration: none;
+                color:black;      
+            }
+            .icon-spotify:hover {
+                color:  #1DB954;
+            }
+            .icon-instagram:hover {
+                color: #e4405f;
+            }
+            .icon-twitter:hover {
+                color: #55caee;
+            }
+            .icon-facebook:hover {
+                color: #3b5999;
+            }
+            .icon-telegram:hover {
+                color: #a2bdf7;
+            }
+        }
+        li:hover {
+            transform: translateY(10px);
+            transition: all 300ms;
+        }
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-width: 799px) {
+
+    footer {   
+        height: 121px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer-title {
+            width: auto;
+            height: 62px;
+            padding: unset;
+            padding-block-start: 24px;
+            padding-block-end: 16px;
+            p {
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 22px;
+                width: 227px;
+                margin: inherit;
+            }
+        }
+        .social {
+            ul {
+                margin: 0;
+                list-style: none;
+                padding: 0;
+                display: flex;
+            }
+            li {
+                margin: 0 3px;
+                a {
+                    display: block;
+                    padding: 0px 15px;
+                    text-decoration: none;     
+                 }
+                 &:hover {
+                    transform: translateY(10px);
+                    transition: all 300ms;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-device-width : 800px) and (max-width: 1243px) {
+    footer {
+        .footer-title {
+          padding-right: 30%;
+        }
+    }
+}
+
+@media screen and (min-device-width : 1441px) {
+   
+    footer {
+        .footer-title {
+            padding-right: 50%;
+        }
+    }
+}
